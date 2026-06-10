@@ -142,4 +142,14 @@ def auto_visualize(df: pd.DataFrame, question: str = "") -> Optional[go.Figure]:
         return fig
 
     # ── Case 5: single numeric column → histogram ────────────────────────────
-    if l
+    if len(num_cols) == 1:
+        num = num_cols[0]
+        fig = px.histogram(
+            df,
+            x=num,
+            title=f"Distribution of {num}",
+            color_discrete_sequence=PALETTE,
+        )
+        return fig
+
+    return None

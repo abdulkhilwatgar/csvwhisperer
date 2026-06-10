@@ -316,4 +316,165 @@ with st.sidebar:
             unsafe_allow_html=True,
         )
         st.caption(
-            "To query your o
+            "To query your own data, clone this Space and run it locally — see the README for setup instructions."
+        )
+    else:
+        uploaded_file = st.file_uploader(
+            "Upload a CSV file", type=["csv"], label_visibility="collapsed"
+        )
+        if uploaded_file is not None and uploaded_file.name != st.session_state.filename:
+            _load_into_state(uploaded_file)
+
+    if st.session_state.df is not None:
+        st.markdown('<div class="section-label">Dataset</div>', unsafe_allow_html=True)
+        st.markdown(
+            f"<div class='status-line'>{st.session_state.filename}</div>",
+            unsafe_allow_html=True,
+        )
+        st.caption(
+            f"{len(st.session_state.df):,} rows · {len(st.session_state.df.columns)} columns"
+        )
+
+        st.markdown('<div class="section-label">Columns</div>', unsafe_allow_html=True)
+        for col, info in st.session_state.schema_summary.items():
+            stats = f"{info['type']} · {info['unique']:,} unique"
+            if info["nulls"]:
+                stats += f" · {info['nulls']:,} nulls"
+            st.caption(f"**{col}** — {stats}")
+
+        st.divider()
+        if st.button("Clear data", width="stretch"):
+            st.session_state.executor.close()
+            st.session_state.df = None
+            st.session_state.executor = None
+            st.session_state.schema_description = None
+            st.session_state.schema_summary = None
+            st.session_state.filename = None
+            st.session_state.messages = []
+            st.session_state.llm_history = []
+            st.rerun()
+
+
+# ── Main panel ─────────────────────────────────────────────────────────────────
+
+if st.session_state.df is None:
+    st.markdown(
+        """
+        <div class="hero">
+            <h1>Talk to your CSV.</h1>
+            <p>
+                Upload a CSV file and ask questions about it in plain English.
+                CSVWhisperer turns your question into SQL, runs it locally
+                against your data, and shows you a table or chart — no query
+                writing required.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown('<div class="section-label">How it works</div>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-title">Upload a CSV</div>
+                <div class="step-desc">
+                    Use the uploader in the sidebar. Your data stays on your
+                    machine and is never sent anywhere.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-title">Ask a question</div>
+                <div class="step-desc">
+                    Type a question about your data the same way you'd ask a
+                    colleague.
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-title">Get an answer</div>
+                <div class="step-desc">
+                    CSVWhisperer writes the SQL, runs it, and shows you a
+                    table or chart.
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown('<div class="section-label">Example prompts</div>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div class="prompt-grid">
+            <div class="prompt-card">"What are the top 10 rows by revenue?"</div>
+            <div class="prompt-card">"Show me the average value by category."</div>
+            <div class="prompt-card">"How many records are there per month?"</div>
+            <div class="prompt-card">"Which group has grown the most over time?"</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+else:
+    df = st.session_state.df
+    st.markdown(
+        f"""
+        <div class="data-bar">
+            <div class="data-bar-name">{st.session_state.filename}</div>
+            <div class="data-bar-meta">{len(df):,} rows · {len(df.columns)} columns</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    for msg in st.session_state.messages:
+        if msg["role"] == "user":
+            with st.chat_message("user"):
+                st.markdown(msg["content"])
+        else:
+            with st.chat_message("assistant"):
+                render_stored_message(msg)
+
+    if question := st.chat_input("Ask a question about your data..."):
+        st.session_state.messages.append({"role": "user", "content": question})
+        with st.chat_message("user"):
+            st.markdown(question)
+
+        with st.chat_message("assistant"):
+            with st.spinner("Thinking..."):
+                response = generate_sql_with_retry(
+                    question,
+                    st.session_state.schema_description,
+                    st.session_state.executor,
+                    st.session_state.llm_history,
+                )
+
+            if response["success"]:
+                render_result(
+                    response["result"], response["sql"], response["attempts"], question
+                )
+                st.session_state.messages.append({
+                    "role": "assistant",
+                    "success": True,
+                    "result_df": response["result"],
+                    "sql": response["sql"],
+                    "attempts": response["attempts"],
+                    "question": question,
+                })
+                st.session_state.llm_history.append({"role": "user", "content": question})
+                st.session_state.llm_history.append(
+                    {"role": "assistant", "content": response["sql"]}
+                )
+            else:
+                render_failure(response["error"], response["attempts"])
+                st.session_state.messages.append({
+                    "role": "assistant",
+                    "success": False,
+                    "error": response["error"],
+                    "attempts": response["attempts"],
+                    "question": question,
+                })

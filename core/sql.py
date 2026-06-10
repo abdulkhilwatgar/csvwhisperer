@@ -169,4 +169,18 @@ def generate_sql_with_retry(
             return {
                 "sql": sql,
                 "result": result,
-  
+                "error": None,
+                "attempts": attempts,
+                "success": True,
+            }
+
+        last_error = result
+        attempts.append({"sql": sql, "error": last_error})
+
+    return {
+        "sql": last_sql,
+        "result": None,
+        "error": last_error,
+        "attempts": attempts,
+        "success": False,
+    }

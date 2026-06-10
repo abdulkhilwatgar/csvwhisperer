@@ -117,4 +117,5 @@ def get_schema_summary(df: pd.DataFrame) -> dict:
             "nulls": int(series.isna().sum()),
             "sample": series.dropna().head(3).tolist(),
         }
-   
+
+    return summary
