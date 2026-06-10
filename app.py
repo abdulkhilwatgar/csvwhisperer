@@ -210,7 +210,7 @@ def render_result(result_df: pd.DataFrame, sql: str, attempts: list, question: s
     elif result_df.empty:
         st.info("The query returned no results.")
     else:
-        st.dataframe(result_df, width="stretch")
+        st.dataframe(result_df, use_container_width=True)
         if should_visualize(result_df):
             fig = auto_visualize(result_df, question)
             if fig:
@@ -221,7 +221,7 @@ def render_result(result_df: pd.DataFrame, sql: str, attempts: list, question: s
                     font_family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif",
                     title_font_family="Georgia, 'Times New Roman', serif",
                 )
-                st.plotly_chart(fig, width="stretch")
+                st.plotly_chart(fig, use_container_width=True)
 
     with st.expander("View generated SQL"):
         st.code(sql, language="sql")
@@ -343,7 +343,7 @@ with st.sidebar:
             st.caption(f"**{col}** — {stats}")
 
         st.divider()
-        if st.button("Clear data", width="stretch"):
+        if st.button("Clear data", use_container_width=True):
             st.session_state.executor.close()
             st.session_state.df = None
             st.session_state.executor = None
