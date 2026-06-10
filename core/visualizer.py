@@ -29,7 +29,7 @@ def _categorical_cols(df: pd.DataFrame) -> list:
 
 def _looks_like_date(col: pd.Series) -> bool:
     try:
-        pd.to_datetime(col.dropna().head(10))
+        pd.to_datetime(col.dropna().head(10), format="mixed")
         return True
     except Exception:
         return False
@@ -98,7 +98,26 @@ def auto_visualize(df: pd.DataFrame, question: str = "") -> Optional[go.Figure]:
     # Clamp to top 25 rows for bar charts (readability)
     MAX_BAR_ROWS = 25
 
-    # ── Case 1: 1 categorical + 1 numeric → horizontal bar ──────────────────
+    # ── Case 1: date-like first col + numeric → line chart ──────────────────
+    if cat_cols and num_cols and _looks_like_date(df[cat_cols[0]]):
+        date_col = cat_cols[0]
+        try:
+            plot_df = df.copy()
+            plot_df[date_col] = pd.to_datetime(plot_df[date_col])
+            plot_df = plot_df.sort_values(date_col)
+            fig = px.line(
+                plot_df,
+                x=date_col,
+                y=num_cols,
+                title=f"Trend over {date_col}",
+                markers=True,
+                color_discrete_sequence=PALETTE,
+            )
+            return fig
+        except Exception:
+            pass
+
+    # ── Case 2: 1 categorical + 1 numeric → horizontal bar ──────────────────
     if len(cat_cols) == 1 and len(num_cols) == 1:
         cat, num = cat_cols[0], num_cols[0]
         plot_df = df.nlargest(MAX_BAR_ROWS, num) if len(df) > MAX_BAR_ROWS else df
@@ -117,7 +136,7 @@ def auto_visualize(df: pd.DataFrame, question: str = "") -> Optional[go.Figure]:
         fig.update_layout(showlegend=False, coloraxis_showscale=False)
         return fig
 
-    # ── Case 2: 1 categorical + multiple numerics → grouped bar ─────────────
+    # ── Case 3: 1 categorical + multiple numerics → grouped bar ─────────────
     if len(cat_cols) == 1 and len(num_cols) > 1:
         cat = cat_cols[0]
         plot_df = df.head(MAX_BAR_ROWS)
@@ -130,25 +149,6 @@ def auto_visualize(df: pd.DataFrame, question: str = "") -> Optional[go.Figure]:
             color_discrete_sequence=PALETTE,
         )
         return fig
-
-    # ── Case 3: date-like first col + numeric → line chart ──────────────────
-    if cat_cols and _looks_like_date(df[cat_cols[0]]) and num_cols:
-        date_col = cat_cols[0]
-        try:
-            plot_df = df.copy()
-            plot_df[date_col] = pd.to_datetime(plot_df[date_col])
-            plot_df = plot_df.sort_values(date_col)
-            fig = px.line(
-                plot_df,
-                x=date_col,
-                y=num_cols,
-                title=f"Trend over {date_col}",
-                markers=True,
-                color_discrete_sequence=PALETTE,
-            )
-            return fig
-        except Exception:
-            pass
 
     # ── Case 4: 2 numeric cols → scatter ────────────────────────────────────
     if len(num_cols) >= 2:

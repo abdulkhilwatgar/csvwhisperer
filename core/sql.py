@@ -25,6 +25,7 @@ STRICT RULES:
 - Use LIMIT 500 unless the user explicitly asks for more rows
 - For aggregation questions, always GROUP BY the categorical dimension
 - Never use SELECT * unless the user explicitly asks to "show all columns"
+- Always alias aggregate or computed expressions (e.g. COUNT(*), SUM(...), AVG(...)) with a descriptive snake_case name using AS — never leave a column unaliased
 """
 
 
