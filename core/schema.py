@@ -3,6 +3,7 @@ schema.py — CSV loading and schema inference for CSVWhisperer.
 Handles type detection, column sanitization, and building LLM-ready schema descriptions.
 """
 
+import os
 import pandas as pd
 import re
 import io
@@ -47,7 +48,7 @@ def load_csv(file) -> tuple:
             content = content.decode("utf-8", errors="replace")
         df = pd.read_csv(io.StringIO(content))
     else:
-        filename = str(file)
+        filename = os.path.basename(str(file))
         df = pd.read_csv(file)
 
     df, _ = sanitize_columns(df)
