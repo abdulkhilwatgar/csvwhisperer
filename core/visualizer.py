@@ -53,6 +53,29 @@ def _format_number(val) -> str:
         return str(val)
 
 
+def format_single_value_result(df: pd.DataFrame) -> Optional[str]:
+    """
+    If the result is a single cell (1 row, 1 column), format it as a
+    large markdown value with its column name as a caption.
+    Returns None for any other shape.
+    """
+    if df is None or df.shape != (1, 1):
+        return None
+
+    col = df.columns[0]
+    val = df.iloc[0, 0]
+
+    if pd.isna(val):
+        display = "—"
+    elif pd.api.types.is_numeric_dtype(df[col]) and not pd.api.types.is_bool_dtype(df[col]):
+        display = _format_number(val)
+    else:
+        display = str(val)
+
+    label = str(col).replace("_", " ").strip()
+    return f"### {display}\n{label}"
+
+
 # ── Chart decision logic ───────────────────────────────────────────────────────
 
 def should_visualize(df: pd.DataFrame) -> bool:
