@@ -1,0 +1,501 @@
+order_id,order_date,customer_name,product_name,category,quantity,unit_price,discount_pct,revenue,region,country,payment_method,status
+ORD-00001,2023-02-22,Charlotte Williams,Face Serum,Beauty,1,42.99,0,42.99,Europe,Germany,Google Pay,Completed
+ORD-00002,2023-04-12,Charlotte White,Wireless Headphones,Electronics,1,79.99,0,79.99,North America,Mexico,PayPal,Completed
+ORD-00003,2023-06-24,Daniel Jones,Dumbbells 20lb,Sports,3,49.99,0,149.97,Europe,Spain,PayPal,Cancelled
+ORD-00004,2023-01-23,Ethan Young,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Asia Pacific,Singapore,Credit Card,Completed
+ORD-00005,2023-12-27,Alex Johnson,Monitor Stand,Electronics,1,39.99,5,37.99,Asia Pacific,Japan,PayPal,Cancelled
+ORD-00006,2023-08-21,Ava Garcia,Coffee Maker,Home & Kitchen,3,59.99,15,152.97,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00007,2023-11-22,Emma Young,Yoga Pants,Clothing,2,44.99,5,85.48,North America,Mexico,PayPal,Completed
+ORD-00008,2023-01-29,Olivia Johnson,Data Science Guide,Books,1,44.99,15,38.24,Europe,France,Debit Card,Completed
+ORD-00009,2023-12-02,Mia Jackson,Coffee Maker,Home & Kitchen,1,59.99,15,50.99,Asia Pacific,Japan,Apple Pay,Completed
+ORD-00010,2023-10-26,Noah Thomas,Air Fryer,Home & Kitchen,1,99.99,5,94.99,Asia Pacific,India,PayPal,Completed
+ORD-00011,2023-11-18,Emma White,Foam Roller,Sports,1,24.99,0,24.99,North America,United States,Google Pay,Completed
+ORD-00012,2023-12-15,Sarah Young,Data Science Guide,Books,2,44.99,0,89.98,Asia Pacific,Australia,Debit Card,Cancelled
+ORD-00013,2023-05-15,Mason Garcia,Lip Balm Set,Beauty,1,14.99,0,14.99,Middle East,UAE,Google Pay,Completed
+ORD-00014,2023-07-11,Emma Young,Lip Balm Set,Beauty,3,14.99,5,42.72,Europe,Germany,Google Pay,Completed
+ORD-00015,2023-05-03,Maria Davis,Dumbbells 20lb,Sports,1,49.99,0,49.99,Asia Pacific,Singapore,Google Pay,Completed
+ORD-00016,2023-12-04,Mia Young,Webcam HD,Electronics,3,89.99,20,215.98,Europe,Germany,PayPal,Completed
+ORD-00017,2023-07-24,Ava Harris,Jump Rope,Sports,1,12.99,0,12.99,Europe,France,Google Pay,Completed
+ORD-00018,2023-04-23,James Williams,Mechanical Keyboard,Electronics,1,129.99,0,129.99,Europe,Italy,Credit Card,Completed
+ORD-00019,2023-12-09,Mia Miller,Wireless Headphones,Electronics,3,79.99,0,239.97,Europe,France,Google Pay,Completed
+ORD-00020,2023-04-08,Sarah Brown,Shampoo Bar,Beauty,2,12.99,0,25.98,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00021,2023-07-26,Liam Brown,Data Science Guide,Books,1,44.99,10,40.49,North America,United States,PayPal,Completed
+ORD-00022,2023-05-08,Alex Harris,Winter Coat,Clothing,1,149.99,0,149.99,Asia Pacific,India,Google Pay,Completed
+ORD-00023,2023-07-28,Mia Martin,Monitor Stand,Electronics,3,39.99,20,95.98,Europe,Germany,PayPal,Cancelled
+ORD-00024,2023-08-21,Sophia White,Python Cookbook,Books,1,39.99,0,39.99,Middle East,Saudi Arabia,Google Pay,Pending
+ORD-00025,2023-10-05,Maria Anderson,Eye Cream,Beauty,1,36.99,0,36.99,North America,Mexico,Credit Card,Completed
+ORD-00026,2023-09-18,Alex Garcia,Foam Roller,Sports,2,24.99,15,42.48,Europe,United Kingdom,Credit Card,Refunded
+ORD-00027,2023-11-01,Maria Walker,Mechanical Keyboard,Electronics,1,129.99,15,110.49,Europe,Italy,Credit Card,Completed
+ORD-00028,2023-12-09,Liam Davis,Shampoo Bar,Beauty,2,12.99,0,25.98,Asia Pacific,Japan,Debit Card,Completed
+ORD-00029,2023-08-23,Amelia Lee,Yoga Pants,Clothing,1,44.99,15,38.24,North America,United States,Credit Card,Completed
+ORD-00030,2023-05-06,Ava Taylor,Resistance Bands,Sports,2,19.99,0,39.98,Asia Pacific,Australia,PayPal,Completed
+ORD-00031,2023-10-11,Sophia Brown,Dumbbells 20lb,Sports,2,49.99,20,79.98,North America,Mexico,PayPal,Completed
+ORD-00032,2023-06-25,Michael Wilson,Wireless Headphones,Electronics,2,79.99,0,159.98,Asia Pacific,Japan,Google Pay,Completed
+ORD-00033,2023-01-02,Liam Jones,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Asia Pacific,Australia,Debit Card,Completed
+ORD-00034,2023-02-08,David Young,Eye Cream,Beauty,2,36.99,0,73.98,North America,United States,Credit Card,Cancelled
+ORD-00035,2023-07-06,Maria Thomas,Cutting Board,Home & Kitchen,2,29.99,0,59.98,North America,Canada,PayPal,Pending
+ORD-00036,2023-05-02,Emma Garcia,Running Shoes,Clothing,1,64.99,5,61.74,Middle East,UAE,Apple Pay,Completed
+ORD-00037,2023-03-23,Sarah Jackson,Yoga Pants,Clothing,3,44.99,0,134.97,Europe,France,Credit Card,Cancelled
+ORD-00038,2023-04-27,Olivia Smith,Design Thinking,Books,1,24.99,15,21.24,Asia Pacific,Singapore,PayPal,Completed
+ORD-00039,2023-11-25,Mason Jackson,Blender Pro,Home & Kitchen,3,74.99,20,179.98,Asia Pacific,Singapore,Google Pay,Completed
+ORD-00040,2023-02-25,Amelia White,Wireless Headphones,Electronics,4,79.99,0,319.96,Asia Pacific,Australia,Debit Card,Pending
+ORD-00041,2023-05-11,Maria White,Knife Set,Home & Kitchen,2,54.99,5,104.48,Middle East,UAE,Credit Card,Refunded
+ORD-00042,2023-12-06,Sarah Taylor,Resistance Bands,Sports,1,19.99,0,19.99,Asia Pacific,Singapore,Google Pay,Completed
+ORD-00043,2023-08-04,Noah Garcia,Eye Cream,Beauty,1,36.99,5,35.14,Europe,Germany,Google Pay,Refunded
+ORD-00044,2023-08-09,Lucas Walker,Knife Set,Home & Kitchen,2,54.99,0,109.98,Asia Pacific,Japan,Debit Card,Completed
+ORD-00045,2023-05-26,Mason Walker,Data Science Guide,Books,2,44.99,5,85.48,Europe,United Kingdom,Debit Card,Completed
+ORD-00046,2023-05-06,Mia Walker,Yoga Pants,Clothing,1,44.99,0,44.99,North America,United States,Credit Card,Completed
+ORD-00047,2023-05-05,David Smith,Fiction Novel,Books,1,14.99,5,14.24,Middle East,Saudi Arabia,Credit Card,Cancelled
+ORD-00048,2023-10-13,Olivia Brown,Design Thinking,Books,1,24.99,20,19.99,Middle East,UAE,Apple Pay,Completed
+ORD-00049,2023-10-08,Ethan Garcia,Fiction Novel,Books,5,14.99,5,71.2,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00050,2023-05-21,Ethan Williams,Air Fryer,Home & Kitchen,3,99.99,0,299.97,Middle East,UAE,Debit Card,Completed
+ORD-00051,2023-04-29,Noah Jones,Blender Pro,Home & Kitchen,1,74.99,5,71.24,Europe,Germany,PayPal,Completed
+ORD-00052,2023-08-04,Noah Lee,Data Science Guide,Books,1,44.99,0,44.99,North America,United States,Credit Card,Cancelled
+ORD-00053,2023-08-03,Charlotte Young,Foam Roller,Sports,1,24.99,15,21.24,Asia Pacific,India,Google Pay,Completed
+ORD-00054,2023-12-09,Noah Garcia,Design Thinking,Books,1,24.99,0,24.99,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00055,2023-11-26,Isabella Jones,Jump Rope,Sports,1,12.99,0,12.99,North America,United States,Apple Pay,Completed
+ORD-00056,2023-07-14,Daniel White,USB-C Hub,Electronics,1,49.99,0,49.99,Asia Pacific,Singapore,Debit Card,Cancelled
+ORD-00057,2023-11-29,Alex Johnson,Webcam HD,Electronics,1,89.99,5,85.49,Asia Pacific,Japan,Credit Card,Completed
+ORD-00058,2023-10-16,Michael Harris,Running Shoes,Clothing,2,64.99,0,129.98,Middle East,UAE,Debit Card,Cancelled
+ORD-00059,2023-06-09,Sarah Lee,Air Fryer,Home & Kitchen,2,99.99,20,159.98,North America,United States,Credit Card,Completed
+ORD-00060,2023-12-20,Olivia Brown,Foam Roller,Sports,1,24.99,10,22.49,North America,Mexico,Debit Card,Cancelled
+ORD-00061,2023-09-30,Isabella Thomas,Shampoo Bar,Beauty,3,12.99,10,35.07,North America,Canada,Credit Card,Refunded
+ORD-00062,2023-08-10,Ava Harris,Lip Balm Set,Beauty,1,14.99,0,14.99,Middle East,UAE,PayPal,Completed
+ORD-00063,2023-08-12,Lucas Wilson,Winter Coat,Clothing,5,149.99,0,749.95,Middle East,Saudi Arabia,Debit Card,Cancelled
+ORD-00064,2023-06-22,James Martin,Running Shoes,Clothing,1,64.99,0,64.99,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00065,2023-10-12,James Thompson,Design Thinking,Books,1,24.99,0,24.99,Asia Pacific,Singapore,PayPal,Completed
+ORD-00066,2023-08-18,James Williams,Graphic Tee,Clothing,1,24.99,10,22.49,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00067,2023-08-06,Charlotte Anderson,Design Thinking,Books,1,24.99,5,23.74,Middle East,Saudi Arabia,Debit Card,Pending
+ORD-00068,2023-03-03,Charlotte Garcia,History of Rome,Books,1,19.99,0,19.99,Europe,France,PayPal,Completed
+ORD-00069,2023-04-10,Sophia Davis,Eye Cream,Beauty,1,36.99,5,35.14,Asia Pacific,Australia,Debit Card,Completed
+ORD-00070,2023-10-11,Sophia Jones,Coffee Maker,Home & Kitchen,2,59.99,0,119.98,North America,United States,Apple Pay,Completed
+ORD-00071,2023-01-27,Daniel Martin,Monitor Stand,Electronics,1,39.99,0,39.99,Asia Pacific,Japan,Credit Card,Cancelled
+ORD-00072,2023-03-18,Lucas Taylor,Webcam HD,Electronics,1,89.99,5,85.49,North America,United States,Credit Card,Completed
+ORD-00073,2023-07-14,Ethan Harris,Monitor Stand,Electronics,3,39.99,5,113.97,Europe,Italy,Debit Card,Cancelled
+ORD-00074,2023-11-17,Michael Wilson,Foam Roller,Sports,1,24.99,5,23.74,North America,United States,Credit Card,Completed
+ORD-00075,2023-12-19,Amelia Martin,Denim Jacket,Clothing,2,89.99,0,179.98,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00076,2023-12-18,Olivia Wilson,Yoga Pants,Clothing,2,44.99,10,80.98,Middle East,UAE,Google Pay,Pending
+ORD-00077,2023-03-14,Alex Johnson,Graphic Tee,Clothing,1,24.99,0,24.99,Europe,France,PayPal,Cancelled
+ORD-00078,2023-03-05,Ethan Taylor,Cutting Board,Home & Kitchen,2,29.99,5,56.98,Asia Pacific,India,Apple Pay,Completed
+ORD-00079,2023-06-15,Amelia Wilson,Jump Rope,Sports,1,12.99,0,12.99,North America,Canada,Credit Card,Completed
+ORD-00080,2023-03-31,Mia Thompson,Winter Coat,Clothing,2,149.99,0,299.98,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00081,2023-06-28,Isabella Anderson,Winter Coat,Clothing,1,149.99,10,134.99,North America,Canada,Debit Card,Pending
+ORD-00082,2023-10-09,Maria Harris,Mechanical Keyboard,Electronics,1,129.99,5,123.49,Asia Pacific,India,Credit Card,Completed
+ORD-00083,2023-10-05,Ethan White,Blender Pro,Home & Kitchen,1,74.99,10,67.49,North America,Mexico,Credit Card,Completed
+ORD-00084,2023-04-15,Daniel Young,Dumbbells 20lb,Sports,2,49.99,0,99.98,Middle East,UAE,PayPal,Completed
+ORD-00085,2023-06-09,Charlotte Smith,Data Science Guide,Books,1,44.99,20,35.99,Europe,Germany,Google Pay,Completed
+ORD-00086,2023-11-28,David Martin,Mechanical Keyboard,Electronics,5,129.99,15,552.46,Middle East,UAE,Debit Card,Refunded
+ORD-00087,2023-08-22,Charlotte Jones,Lip Balm Set,Beauty,1,14.99,0,14.99,Middle East,UAE,Apple Pay,Completed
+ORD-00088,2023-08-01,Liam Thompson,Jump Rope,Sports,2,12.99,0,25.98,North America,Canada,Debit Card,Cancelled
+ORD-00089,2023-08-17,Charlotte Martin,USB-C Hub,Electronics,2,49.99,10,89.98,Middle East,UAE,Debit Card,Completed
+ORD-00090,2023-10-20,Noah Davis,Jump Rope,Sports,1,12.99,15,11.04,Europe,Germany,Apple Pay,Completed
+ORD-00091,2023-09-11,Maria Jones,Knife Set,Home & Kitchen,2,54.99,10,98.98,Middle East,UAE,Google Pay,Refunded
+ORD-00092,2023-03-15,Isabella Jones,Coffee Maker,Home & Kitchen,4,59.99,0,239.96,Middle East,UAE,Credit Card,Completed
+ORD-00093,2023-12-12,Charlotte Jackson,Blender Pro,Home & Kitchen,2,74.99,0,149.98,North America,Canada,Debit Card,Pending
+ORD-00094,2023-11-20,Sophia Davis,Eye Cream,Beauty,4,36.99,0,147.96,North America,United States,Credit Card,Completed
+ORD-00095,2023-06-16,Maria Taylor,Wireless Headphones,Electronics,1,79.99,5,75.99,North America,United States,Debit Card,Completed
+ORD-00096,2023-03-31,Alex Walker,Design Thinking,Books,1,24.99,0,24.99,Europe,Germany,Apple Pay,Refunded
+ORD-00097,2023-11-23,Daniel Harris,Moisturizer SPF50,Beauty,1,28.99,5,27.54,Europe,Spain,Debit Card,Pending
+ORD-00098,2023-08-15,Ava Lee,Webcam HD,Electronics,4,89.99,5,341.96,Europe,United Kingdom,Debit Card,Pending
+ORD-00099,2023-02-24,Olivia Jackson,History of Rome,Books,1,19.99,0,19.99,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00100,2023-01-05,Lucas Johnson,Dumbbells 20lb,Sports,5,49.99,0,249.95,Middle East,Saudi Arabia,Google Pay,Pending
+ORD-00101,2023-11-22,Michael Walker,History of Rome,Books,3,19.99,0,59.97,Asia Pacific,Japan,Debit Card,Pending
+ORD-00102,2023-08-14,Maria Lee,Moisturizer SPF50,Beauty,2,28.99,15,49.28,North America,Canada,Debit Card,Pending
+ORD-00103,2023-04-13,David Young,Running Shoes,Clothing,4,64.99,0,259.96,Middle East,UAE,Debit Card,Refunded
+ORD-00104,2023-06-23,Sarah Harris,Dumbbells 20lb,Sports,3,49.99,0,149.97,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00105,2023-07-22,James Wilson,Graphic Tee,Clothing,5,24.99,10,112.45,Asia Pacific,Australia,Google Pay,Completed
+ORD-00106,2023-02-25,Olivia Martin,History of Rome,Books,2,19.99,5,37.98,Middle East,Saudi Arabia,Credit Card,Refunded
+ORD-00107,2023-08-26,Sophia White,Dumbbells 20lb,Sports,4,49.99,0,199.96,North America,Mexico,Credit Card,Completed
+ORD-00108,2023-10-03,David Jackson,Wireless Headphones,Electronics,1,79.99,0,79.99,North America,United States,Apple Pay,Completed
+ORD-00109,2023-12-02,Sarah Martin,Shampoo Bar,Beauty,1,12.99,10,11.69,Europe,Spain,Google Pay,Completed
+ORD-00110,2023-07-05,Sarah Thomas,Coffee Maker,Home & Kitchen,2,59.99,0,119.98,Middle East,UAE,Google Pay,Pending
+ORD-00111,2023-02-16,Michael Walker,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,North America,Canada,Credit Card,Completed
+ORD-00112,2023-10-11,Michael Lee,Air Fryer,Home & Kitchen,5,99.99,10,449.95,Europe,United Kingdom,PayPal,Cancelled
+ORD-00113,2023-03-16,David Young,Yoga Pants,Clothing,3,44.99,10,121.47,North America,Canada,Debit Card,Cancelled
+ORD-00114,2023-05-02,Lucas Anderson,Running Shoes,Clothing,2,64.99,0,129.98,North America,Canada,Credit Card,Completed
+ORD-00115,2023-02-02,Mia Harris,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,North America,Mexico,Debit Card,Refunded
+ORD-00116,2023-12-04,Mason Taylor,Yoga Mat,Sports,1,34.99,0,34.99,North America,Mexico,Apple Pay,Pending
+ORD-00117,2023-09-09,Ethan Williams,Wireless Headphones,Electronics,5,79.99,10,359.95,Middle East,UAE,Credit Card,Completed
+ORD-00118,2023-11-02,Mason Taylor,Resistance Bands,Sports,1,19.99,0,19.99,Asia Pacific,India,Apple Pay,Refunded
+ORD-00119,2023-08-20,Olivia White,Foam Roller,Sports,1,24.99,10,22.49,Europe,Spain,Debit Card,Cancelled
+ORD-00120,2023-12-07,Daniel Thomas,Data Science Guide,Books,1,44.99,0,44.99,Middle East,Saudi Arabia,PayPal,Pending
+ORD-00121,2023-07-10,David Young,Python Cookbook,Books,1,39.99,0,39.99,Middle East,UAE,Credit Card,Refunded
+ORD-00122,2023-01-27,Sophia Walker,Jump Rope,Sports,1,12.99,0,12.99,Asia Pacific,India,Debit Card,Completed
+ORD-00123,2023-02-25,Ava Young,Monitor Stand,Electronics,2,39.99,0,79.98,Middle East,UAE,Debit Card,Completed
+ORD-00124,2023-12-03,Daniel Smith,Cutting Board,Home & Kitchen,1,29.99,0,29.99,North America,Mexico,PayPal,Completed
+ORD-00125,2023-10-17,Noah Williams,Lip Balm Set,Beauty,4,14.99,0,59.96,Europe,Germany,PayPal,Pending
+ORD-00126,2023-08-21,Liam Garcia,Face Serum,Beauty,1,42.99,5,40.84,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00127,2023-03-21,Emma Walker,Lip Balm Set,Beauty,3,14.99,5,42.72,North America,United States,Credit Card,Pending
+ORD-00128,2023-05-20,Michael Thompson,USB-C Hub,Electronics,1,49.99,0,49.99,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00129,2023-01-24,Olivia Jackson,Python Cookbook,Books,1,39.99,5,37.99,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00130,2023-05-29,Liam Brown,Mechanical Keyboard,Electronics,1,129.99,0,129.99,Europe,France,Credit Card,Completed
+ORD-00131,2023-10-14,Ava Williams,Eye Cream,Beauty,1,36.99,0,36.99,Europe,Italy,Apple Pay,Cancelled
+ORD-00132,2023-10-22,Isabella Lee,Face Serum,Beauty,1,42.99,0,42.99,North America,Canada,Apple Pay,Pending
+ORD-00133,2023-11-13,Ethan Thomas,Eye Cream,Beauty,1,36.99,0,36.99,Asia Pacific,Japan,Credit Card,Completed
+ORD-00134,2023-06-08,Liam Davis,Mechanical Keyboard,Electronics,1,129.99,0,129.99,North America,Canada,Debit Card,Cancelled
+ORD-00135,2023-06-29,David Davis,Running Shoes,Clothing,2,64.99,0,129.98,Europe,France,Credit Card,Completed
+ORD-00136,2023-11-18,Mia Harris,Air Fryer,Home & Kitchen,1,99.99,0,99.99,North America,United States,Google Pay,Cancelled
+ORD-00137,2023-03-19,Ethan Williams,Foam Roller,Sports,2,24.99,15,42.48,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00138,2023-06-08,Ethan Harris,Lip Balm Set,Beauty,3,14.99,5,42.72,Asia Pacific,Australia,Credit Card,Completed
+ORD-00139,2023-11-01,Mason Jackson,Blender Pro,Home & Kitchen,1,74.99,15,63.74,North America,Mexico,Apple Pay,Refunded
+ORD-00140,2023-11-06,Mia Thompson,Yoga Mat,Sports,1,34.99,10,31.49,Europe,France,PayPal,Completed
+ORD-00141,2023-11-27,Emma Johnson,Python Cookbook,Books,3,39.99,10,107.97,North America,Mexico,PayPal,Pending
+ORD-00142,2023-05-25,Noah White,Data Science Guide,Books,2,44.99,5,85.48,Asia Pacific,Singapore,Debit Card,Pending
+ORD-00143,2023-02-18,Charlotte Jackson,Yoga Mat,Sports,3,34.99,5,99.72,North America,Canada,Debit Card,Completed
+ORD-00144,2023-06-08,Noah Jones,Shampoo Bar,Beauty,4,12.99,0,51.96,Europe,France,Google Pay,Pending
+ORD-00145,2023-12-10,Mason Williams,USB-C Hub,Electronics,2,49.99,5,94.98,Asia Pacific,Japan,Apple Pay,Refunded
+ORD-00146,2023-09-06,Michael Davis,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Europe,France,PayPal,Completed
+ORD-00147,2023-06-22,Amelia Jones,USB-C Hub,Electronics,3,49.99,0,149.97,North America,Mexico,Google Pay,Completed
+ORD-00148,2023-01-23,Isabella Thomas,Denim Jacket,Clothing,1,89.99,5,85.49,Europe,Spain,PayPal,Completed
+ORD-00149,2023-05-03,Sophia Martin,Dumbbells 20lb,Sports,3,49.99,10,134.97,Europe,Italy,PayPal,Completed
+ORD-00150,2023-09-15,Mason White,Shampoo Bar,Beauty,5,12.99,0,64.95,Asia Pacific,India,PayPal,Cancelled
+ORD-00151,2023-10-11,Sarah Thompson,Winter Coat,Clothing,1,149.99,0,149.99,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00152,2023-02-16,Olivia Harris,Mechanical Keyboard,Electronics,1,129.99,15,110.49,Europe,Spain,Debit Card,Completed
+ORD-00153,2023-07-11,Olivia Smith,Python Cookbook,Books,1,39.99,0,39.99,Middle East,UAE,Debit Card,Completed
+ORD-00154,2023-12-23,David Martin,Lip Balm Set,Beauty,3,14.99,0,44.97,Asia Pacific,India,Apple Pay,Refunded
+ORD-00155,2023-11-08,Mason White,Wireless Headphones,Electronics,1,79.99,0,79.99,Europe,Italy,Credit Card,Cancelled
+ORD-00156,2023-02-02,Sarah Martin,Air Fryer,Home & Kitchen,1,99.99,0,99.99,Middle East,Saudi Arabia,Google Pay,Refunded
+ORD-00157,2023-01-01,Amelia Thomas,Monitor Stand,Electronics,2,39.99,10,71.98,Asia Pacific,India,PayPal,Refunded
+ORD-00158,2023-09-27,Charlotte Thompson,Design Thinking,Books,2,24.99,0,49.98,Asia Pacific,Australia,Google Pay,Refunded
+ORD-00159,2023-05-10,James Thomas,Webcam HD,Electronics,4,89.99,0,359.96,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00160,2023-01-23,Ava Young,Running Shoes,Clothing,3,64.99,10,175.47,Asia Pacific,Japan,Debit Card,Cancelled
+ORD-00161,2023-03-11,Alex Harris,Moisturizer SPF50,Beauty,3,28.99,5,82.62,Middle East,UAE,Credit Card,Completed
+ORD-00162,2023-09-21,Noah Young,Running Shoes,Clothing,3,64.99,15,165.72,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00163,2023-06-19,Daniel Brown,Mechanical Keyboard,Electronics,1,129.99,15,110.49,North America,Mexico,Debit Card,Completed
+ORD-00164,2023-12-21,Mia Thomas,Data Science Guide,Books,4,44.99,0,179.96,Europe,Spain,Google Pay,Completed
+ORD-00165,2023-05-31,Liam Brown,Webcam HD,Electronics,1,89.99,5,85.49,Europe,Italy,Credit Card,Completed
+ORD-00166,2023-12-20,Ethan Thomas,Lip Balm Set,Beauty,1,14.99,5,14.24,Middle East,UAE,Apple Pay,Completed
+ORD-00167,2023-12-10,Noah Thomas,Lip Balm Set,Beauty,2,14.99,0,29.98,North America,United States,Google Pay,Cancelled
+ORD-00168,2023-03-06,Alex Davis,Moisturizer SPF50,Beauty,5,28.99,0,144.95,Middle East,UAE,Debit Card,Completed
+ORD-00169,2023-07-10,Ethan Williams,Fiction Novel,Books,1,14.99,0,14.99,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00170,2023-01-14,Emma Martin,Dumbbells 20lb,Sports,1,49.99,5,47.49,Europe,United Kingdom,Google Pay,Completed
+ORD-00171,2023-11-10,Sophia Martin,Yoga Mat,Sports,1,34.99,0,34.99,Middle East,UAE,PayPal,Completed
+ORD-00172,2023-12-16,Liam Thomas,Running Shoes,Clothing,1,64.99,15,55.24,Middle East,UAE,Credit Card,Refunded
+ORD-00173,2023-09-18,Olivia Brown,Dumbbells 20lb,Sports,4,49.99,15,169.97,Europe,France,PayPal,Cancelled
+ORD-00174,2023-10-10,David Walker,Denim Jacket,Clothing,3,89.99,0,269.97,Asia Pacific,India,Credit Card,Completed
+ORD-00175,2023-10-22,Alex Jones,Knife Set,Home & Kitchen,5,54.99,10,247.45,Middle East,Saudi Arabia,Debit Card,Pending
+ORD-00176,2023-11-24,Lucas Garcia,Webcam HD,Electronics,1,89.99,5,85.49,Europe,Italy,PayPal,Completed
+ORD-00177,2023-03-24,Liam Davis,Yoga Mat,Sports,3,34.99,5,99.72,Asia Pacific,Japan,Debit Card,Refunded
+ORD-00178,2023-11-17,Sophia Walker,Coffee Maker,Home & Kitchen,1,59.99,5,56.99,Asia Pacific,Japan,Google Pay,Completed
+ORD-00179,2023-11-06,Liam Lee,Resistance Bands,Sports,2,19.99,5,37.98,Europe,Italy,Credit Card,Cancelled
+ORD-00180,2023-10-20,Isabella Walker,Wireless Headphones,Electronics,1,79.99,5,75.99,Asia Pacific,Japan,Credit Card,Completed
+ORD-00181,2023-12-17,Noah Taylor,Shampoo Bar,Beauty,1,12.99,20,10.39,Middle East,UAE,Apple Pay,Completed
+ORD-00182,2023-06-24,Amelia Jones,Face Serum,Beauty,1,42.99,0,42.99,Middle East,UAE,Debit Card,Cancelled
+ORD-00183,2023-07-09,Mason Young,Lip Balm Set,Beauty,2,14.99,15,25.48,Middle East,UAE,Credit Card,Completed
+ORD-00184,2023-01-26,Sophia Jackson,Graphic Tee,Clothing,1,24.99,0,24.99,Europe,United Kingdom,Google Pay,Completed
+ORD-00185,2023-03-23,Mia Thompson,Denim Jacket,Clothing,3,89.99,15,229.47,Asia Pacific,Japan,Apple Pay,Completed
+ORD-00186,2023-04-21,Lucas Thomas,Knife Set,Home & Kitchen,1,54.99,15,46.74,Middle East,UAE,Credit Card,Completed
+ORD-00187,2023-10-02,James Brown,Knife Set,Home & Kitchen,2,54.99,10,98.98,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00188,2023-10-19,Charlotte Miller,Blender Pro,Home & Kitchen,3,74.99,0,224.97,Middle East,UAE,Debit Card,Refunded
+ORD-00189,2023-03-07,Sarah Jackson,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Asia Pacific,Australia,Debit Card,Cancelled
+ORD-00190,2023-09-18,Noah Thompson,Cutting Board,Home & Kitchen,4,29.99,10,107.96,Europe,Italy,Credit Card,Completed
+ORD-00191,2023-11-07,Mason Jones,Mechanical Keyboard,Electronics,2,129.99,10,233.98,Middle East,UAE,Debit Card,Refunded
+ORD-00192,2023-09-17,Mason Young,Air Fryer,Home & Kitchen,1,99.99,5,94.99,Asia Pacific,Singapore,Apple Pay,Pending
+ORD-00193,2023-08-02,Lucas Taylor,Dumbbells 20lb,Sports,1,49.99,0,49.99,Asia Pacific,Australia,Credit Card,Refunded
+ORD-00194,2023-10-26,Mia Garcia,History of Rome,Books,5,19.99,10,89.95,Europe,United Kingdom,Google Pay,Pending
+ORD-00195,2023-10-21,Sarah Miller,Shampoo Bar,Beauty,3,12.99,0,38.97,Europe,United Kingdom,Credit Card,Completed
+ORD-00196,2023-02-01,David Thompson,Knife Set,Home & Kitchen,1,54.99,5,52.24,Middle East,Saudi Arabia,PayPal,Refunded
+ORD-00197,2023-09-30,Liam Young,Knife Set,Home & Kitchen,2,54.99,0,109.98,Europe,Spain,Debit Card,Pending
+ORD-00198,2023-10-13,Sophia Davis,Lip Balm Set,Beauty,2,14.99,0,29.98,Europe,France,Debit Card,Cancelled
+ORD-00199,2023-10-14,Daniel Taylor,Air Fryer,Home & Kitchen,2,99.99,0,199.98,Middle East,Saudi Arabia,Credit Card,Refunded
+ORD-00200,2023-05-29,Maria Taylor,Shampoo Bar,Beauty,1,12.99,20,10.39,Asia Pacific,Japan,Credit Card,Completed
+ORD-00201,2023-03-12,Sarah Walker,History of Rome,Books,2,19.99,0,39.98,Asia Pacific,Singapore,Google Pay,Completed
+ORD-00202,2023-02-21,Isabella Anderson,Running Shoes,Clothing,2,64.99,5,123.48,Europe,United Kingdom,Apple Pay,Completed
+ORD-00203,2023-12-01,Mia Martin,Moisturizer SPF50,Beauty,1,28.99,5,27.54,Europe,Spain,PayPal,Cancelled
+ORD-00204,2023-10-21,Olivia Young,Blender Pro,Home & Kitchen,1,74.99,0,74.99,North America,Mexico,Credit Card,Completed
+ORD-00205,2023-04-06,Sophia Johnson,Design Thinking,Books,4,24.99,0,99.96,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00206,2023-11-25,Charlotte Thompson,Jump Rope,Sports,1,12.99,20,10.39,Asia Pacific,India,Apple Pay,Completed
+ORD-00207,2023-08-23,Daniel Garcia,Foam Roller,Sports,1,24.99,10,22.49,Asia Pacific,Japan,Credit Card,Pending
+ORD-00208,2023-11-24,Noah White,Blender Pro,Home & Kitchen,2,74.99,10,134.98,Europe,Italy,Google Pay,Completed
+ORD-00209,2023-06-15,Olivia Smith,Webcam HD,Electronics,2,89.99,0,179.98,Europe,Spain,Debit Card,Completed
+ORD-00210,2023-05-14,Ava Davis,Graphic Tee,Clothing,3,24.99,20,59.98,Asia Pacific,Australia,Credit Card,Pending
+ORD-00211,2023-11-24,Sophia Thomas,Webcam HD,Electronics,1,89.99,0,89.99,Asia Pacific,Australia,Google Pay,Completed
+ORD-00212,2023-12-26,Charlotte Martin,Denim Jacket,Clothing,1,89.99,0,89.99,Asia Pacific,India,Google Pay,Cancelled
+ORD-00213,2023-08-17,Mason Thomas,Moisturizer SPF50,Beauty,3,28.99,5,82.62,North America,Mexico,Credit Card,Refunded
+ORD-00214,2023-10-02,David Garcia,Wireless Headphones,Electronics,3,79.99,15,203.97,Europe,Italy,Debit Card,Cancelled
+ORD-00215,2023-09-19,Ethan Johnson,Foam Roller,Sports,1,24.99,0,24.99,Middle East,UAE,Apple Pay,Completed
+ORD-00216,2023-01-12,Noah Wilson,Foam Roller,Sports,1,24.99,0,24.99,Middle East,Saudi Arabia,Credit Card,Pending
+ORD-00217,2023-01-31,Alex Martin,Winter Coat,Clothing,1,149.99,0,149.99,North America,Mexico,Credit Card,Completed
+ORD-00218,2023-07-15,Ethan Jackson,Design Thinking,Books,3,24.99,10,67.47,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00219,2023-10-03,Noah Thompson,Shampoo Bar,Beauty,1,12.99,15,11.04,North America,United States,PayPal,Pending
+ORD-00220,2023-09-30,Noah Davis,Running Shoes,Clothing,3,64.99,20,155.98,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00221,2023-12-05,Isabella Walker,Air Fryer,Home & Kitchen,1,99.99,15,84.99,North America,United States,Credit Card,Completed
+ORD-00222,2023-01-23,Noah Harris,Running Shoes,Clothing,1,64.99,0,64.99,North America,United States,PayPal,Refunded
+ORD-00223,2023-06-13,Lucas Walker,Running Shoes,Clothing,1,64.99,20,51.99,Europe,Italy,Debit Card,Completed
+ORD-00224,2023-05-21,Maria Young,Air Fryer,Home & Kitchen,5,99.99,5,474.95,Middle East,Saudi Arabia,Google Pay,Pending
+ORD-00225,2023-09-26,Liam White,Graphic Tee,Clothing,2,24.99,0,49.98,Asia Pacific,India,Apple Pay,Completed
+ORD-00226,2023-06-03,David Harris,Knife Set,Home & Kitchen,1,54.99,5,52.24,Europe,Germany,Credit Card,Refunded
+ORD-00227,2023-04-15,Liam Williams,Data Science Guide,Books,2,44.99,0,89.98,Europe,France,Apple Pay,Cancelled
+ORD-00228,2023-07-13,Amelia Walker,Coffee Maker,Home & Kitchen,2,59.99,10,107.98,North America,Canada,Credit Card,Cancelled
+ORD-00229,2023-04-17,Liam Taylor,Mechanical Keyboard,Electronics,3,129.99,5,370.47,Europe,Spain,Credit Card,Completed
+ORD-00230,2023-12-27,Michael Jackson,Running Shoes,Clothing,2,64.99,10,116.98,Europe,Italy,PayPal,Refunded
+ORD-00231,2023-05-14,Ava Thompson,Blender Pro,Home & Kitchen,1,74.99,5,71.24,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00232,2023-06-10,Isabella Johnson,Webcam HD,Electronics,3,89.99,0,269.97,Europe,France,Google Pay,Cancelled
+ORD-00233,2023-03-20,Michael Anderson,Denim Jacket,Clothing,1,89.99,5,85.49,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00234,2023-09-08,Mia Harris,Resistance Bands,Sports,1,19.99,5,18.99,Asia Pacific,Singapore,PayPal,Pending
+ORD-00235,2023-11-25,Maria Thompson,Air Fryer,Home & Kitchen,1,99.99,5,94.99,Europe,Italy,Credit Card,Cancelled
+ORD-00236,2023-12-29,David Smith,Wireless Headphones,Electronics,3,79.99,0,239.97,Europe,United Kingdom,PayPal,Refunded
+ORD-00237,2023-01-09,James Young,History of Rome,Books,1,19.99,5,18.99,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00238,2023-09-15,Isabella Garcia,Wireless Headphones,Electronics,2,79.99,0,159.98,Asia Pacific,Australia,Credit Card,Completed
+ORD-00239,2023-05-17,Noah Williams,Resistance Bands,Sports,1,19.99,5,18.99,Asia Pacific,Singapore,Debit Card,Completed
+ORD-00240,2023-12-01,Maria Williams,Fiction Novel,Books,1,14.99,5,14.24,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00241,2023-09-13,Isabella Anderson,Fiction Novel,Books,1,14.99,5,14.24,Europe,United Kingdom,Google Pay,Cancelled
+ORD-00242,2023-01-24,Alex Wilson,Monitor Stand,Electronics,4,39.99,0,159.96,Middle East,Saudi Arabia,Google Pay,Refunded
+ORD-00243,2023-10-28,David Jackson,Face Serum,Beauty,1,42.99,15,36.54,North America,United States,Credit Card,Completed
+ORD-00244,2023-07-16,David Williams,Winter Coat,Clothing,1,149.99,10,134.99,Middle East,Saudi Arabia,Google Pay,Pending
+ORD-00245,2023-11-06,Amelia Walker,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,North America,Canada,Apple Pay,Cancelled
+ORD-00246,2023-04-27,Ava Young,Coffee Maker,Home & Kitchen,2,59.99,10,107.98,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00247,2023-02-07,Alex Wilson,Winter Coat,Clothing,2,149.99,0,299.98,Asia Pacific,Japan,PayPal,Completed
+ORD-00248,2023-01-03,Sophia Harris,Moisturizer SPF50,Beauty,2,28.99,0,57.98,North America,United States,Debit Card,Cancelled
+ORD-00249,2023-02-22,James Williams,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Middle East,Saudi Arabia,Debit Card,Refunded
+ORD-00250,2023-05-30,Isabella Jackson,Monitor Stand,Electronics,2,39.99,0,79.98,Middle East,UAE,Credit Card,Pending
+ORD-00251,2023-03-13,Daniel Taylor,Resistance Bands,Sports,2,19.99,0,39.98,Middle East,UAE,Debit Card,Completed
+ORD-00252,2023-02-09,Ava Wilson,Running Shoes,Clothing,1,64.99,0,64.99,Asia Pacific,India,PayPal,Pending
+ORD-00253,2023-06-05,James Jackson,Eye Cream,Beauty,2,36.99,0,73.98,North America,United States,Debit Card,Cancelled
+ORD-00254,2023-11-30,Amelia Jones,Foam Roller,Sports,3,24.99,0,74.97,Asia Pacific,India,Debit Card,Completed
+ORD-00255,2023-05-30,Mia Lee,Resistance Bands,Sports,1,19.99,0,19.99,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00256,2023-04-13,Lucas Young,History of Rome,Books,3,19.99,0,59.97,North America,Mexico,PayPal,Pending
+ORD-00257,2023-05-30,Alex White,Yoga Mat,Sports,5,34.99,0,174.95,Europe,Spain,Apple Pay,Completed
+ORD-00258,2023-02-07,Ethan Walker,Lip Balm Set,Beauty,1,14.99,5,14.24,Middle East,Saudi Arabia,Apple Pay,Refunded
+ORD-00259,2023-07-04,Charlotte Walker,Fiction Novel,Books,2,14.99,15,25.48,Middle East,UAE,Credit Card,Completed
+ORD-00260,2023-08-09,Sarah Smith,Yoga Pants,Clothing,1,44.99,5,42.74,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00261,2023-07-11,Noah Harris,Winter Coat,Clothing,2,149.99,5,284.98,Europe,Spain,Google Pay,Pending
+ORD-00262,2023-08-01,Alex Brown,Resistance Bands,Sports,1,19.99,0,19.99,North America,Canada,PayPal,Completed
+ORD-00263,2023-09-01,Sarah Harris,Blender Pro,Home & Kitchen,1,74.99,0,74.99,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00264,2023-11-28,Sarah Garcia,USB-C Hub,Electronics,1,49.99,10,44.99,North America,Canada,PayPal,Refunded
+ORD-00265,2023-07-27,Emma Garcia,Winter Coat,Clothing,1,149.99,5,142.49,Middle East,UAE,Apple Pay,Completed
+ORD-00266,2023-01-03,Michael Miller,Monitor Stand,Electronics,4,39.99,0,159.96,Middle East,Saudi Arabia,Debit Card,Cancelled
+ORD-00267,2023-06-16,Michael Harris,Face Serum,Beauty,2,42.99,10,77.38,Europe,France,Credit Card,Completed
+ORD-00268,2023-10-28,Sarah Thomas,Eye Cream,Beauty,2,36.99,5,70.28,Middle East,Saudi Arabia,Debit Card,Cancelled
+ORD-00269,2023-12-11,David Anderson,Fiction Novel,Books,1,14.99,5,14.24,Asia Pacific,Australia,Credit Card,Completed
+ORD-00270,2023-11-02,David Lee,Coffee Maker,Home & Kitchen,1,59.99,5,56.99,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00271,2023-03-27,Mia Taylor,Graphic Tee,Clothing,2,24.99,5,47.48,Europe,Italy,PayPal,Completed
+ORD-00272,2023-03-11,Michael Jackson,Knife Set,Home & Kitchen,2,54.99,15,93.48,North America,Canada,Google Pay,Refunded
+ORD-00273,2023-03-27,Alex Lee,Eye Cream,Beauty,1,36.99,0,36.99,Middle East,Saudi Arabia,Credit Card,Cancelled
+ORD-00274,2023-08-23,Lucas Martin,Yoga Pants,Clothing,1,44.99,0,44.99,Asia Pacific,Japan,Google Pay,Refunded
+ORD-00275,2023-08-14,Charlotte Miller,Monitor Stand,Electronics,1,39.99,10,35.99,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00276,2023-06-28,Alex Harris,Moisturizer SPF50,Beauty,1,28.99,20,23.19,Middle East,Saudi Arabia,Credit Card,Cancelled
+ORD-00277,2023-03-26,Amelia Jones,Denim Jacket,Clothing,3,89.99,5,256.47,Asia Pacific,India,PayPal,Cancelled
+ORD-00278,2023-12-27,Sophia Taylor,Running Shoes,Clothing,2,64.99,5,123.48,Europe,France,Google Pay,Completed
+ORD-00279,2023-05-22,David Jones,Yoga Mat,Sports,1,34.99,10,31.49,Middle East,UAE,PayPal,Completed
+ORD-00280,2023-03-14,Lucas Wilson,Lip Balm Set,Beauty,3,14.99,10,40.47,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00281,2023-09-21,Daniel Thomas,Python Cookbook,Books,2,39.99,15,67.98,North America,Canada,Apple Pay,Completed
+ORD-00282,2023-08-23,Ava Williams,Cutting Board,Home & Kitchen,1,29.99,10,26.99,North America,Mexico,Google Pay,Completed
+ORD-00283,2023-06-22,Charlotte Lee,Graphic Tee,Clothing,3,24.99,0,74.97,Asia Pacific,Singapore,PayPal,Refunded
+ORD-00284,2023-11-17,Ethan Smith,History of Rome,Books,4,19.99,10,71.96,North America,United States,Credit Card,Cancelled
+ORD-00285,2023-12-19,David Taylor,Graphic Tee,Clothing,1,24.99,20,19.99,Middle East,UAE,PayPal,Cancelled
+ORD-00286,2023-01-27,Noah Taylor,Coffee Maker,Home & Kitchen,2,59.99,0,119.98,Asia Pacific,Japan,PayPal,Completed
+ORD-00287,2023-03-09,Lucas Davis,Face Serum,Beauty,2,42.99,0,85.98,Middle East,UAE,Google Pay,Pending
+ORD-00288,2023-12-22,David Martin,Python Cookbook,Books,1,39.99,0,39.99,North America,Canada,Credit Card,Completed
+ORD-00289,2023-06-03,David Jackson,Python Cookbook,Books,2,39.99,0,79.98,Asia Pacific,Singapore,PayPal,Pending
+ORD-00290,2023-06-29,Michael Jones,Moisturizer SPF50,Beauty,1,28.99,5,27.54,Europe,Spain,Apple Pay,Refunded
+ORD-00291,2023-03-05,Lucas Jackson,Eye Cream,Beauty,3,36.99,0,110.97,North America,United States,Debit Card,Completed
+ORD-00292,2023-11-04,Amelia Walker,Air Fryer,Home & Kitchen,1,99.99,5,94.99,Europe,Italy,Debit Card,Cancelled
+ORD-00293,2023-09-23,Amelia Thompson,Face Serum,Beauty,3,42.99,5,122.52,Asia Pacific,Japan,PayPal,Pending
+ORD-00294,2023-07-17,Sarah Davis,History of Rome,Books,2,19.99,10,35.98,Europe,Spain,Apple Pay,Pending
+ORD-00295,2023-03-09,Noah Lee,Yoga Mat,Sports,2,34.99,20,55.98,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00296,2023-10-28,Alex Smith,Resistance Bands,Sports,3,19.99,20,47.98,North America,United States,Debit Card,Completed
+ORD-00297,2023-08-05,Noah Williams,Wireless Headphones,Electronics,4,79.99,0,319.96,Asia Pacific,India,Google Pay,Refunded
+ORD-00298,2023-10-02,Liam Jackson,Resistance Bands,Sports,1,19.99,0,19.99,Europe,Germany,Google Pay,Pending
+ORD-00299,2023-05-06,Alex White,Face Serum,Beauty,1,42.99,0,42.99,Europe,United Kingdom,Credit Card,Completed
+ORD-00300,2023-01-07,David Smith,Jump Rope,Sports,1,12.99,5,12.34,Europe,United Kingdom,PayPal,Completed
+ORD-00301,2023-07-10,David Wilson,Cutting Board,Home & Kitchen,2,29.99,10,53.98,Asia Pacific,Japan,Credit Card,Cancelled
+ORD-00302,2023-12-31,Lucas Williams,USB-C Hub,Electronics,3,49.99,0,149.97,North America,Canada,Apple Pay,Completed
+ORD-00303,2023-03-22,Daniel Brown,Dumbbells 20lb,Sports,1,49.99,15,42.49,Europe,France,Google Pay,Pending
+ORD-00304,2023-05-06,Maria Martin,Face Serum,Beauty,1,42.99,5,40.84,North America,United States,Debit Card,Completed
+ORD-00305,2023-06-14,Olivia White,Denim Jacket,Clothing,4,89.99,15,305.97,Middle East,UAE,Debit Card,Completed
+ORD-00306,2023-04-25,Mason Johnson,Monitor Stand,Electronics,1,39.99,5,37.99,North America,United States,Apple Pay,Completed
+ORD-00307,2023-08-22,James Thomas,History of Rome,Books,3,19.99,0,59.97,North America,Mexico,PayPal,Completed
+ORD-00308,2023-04-11,Charlotte Davis,Dumbbells 20lb,Sports,2,49.99,0,99.98,Asia Pacific,India,PayPal,Completed
+ORD-00309,2023-01-01,Noah Taylor,Python Cookbook,Books,1,39.99,0,39.99,North America,Canada,Credit Card,Completed
+ORD-00310,2023-02-17,Maria Davis,Resistance Bands,Sports,1,19.99,20,15.99,Europe,France,Google Pay,Completed
+ORD-00311,2023-03-10,Noah Williams,Lip Balm Set,Beauty,1,14.99,10,13.49,North America,Mexico,Google Pay,Refunded
+ORD-00312,2023-06-11,Noah Anderson,Webcam HD,Electronics,2,89.99,0,179.98,Asia Pacific,Singapore,Debit Card,Completed
+ORD-00313,2023-02-24,Emma Harris,Air Fryer,Home & Kitchen,1,99.99,0,99.99,North America,United States,Apple Pay,Completed
+ORD-00314,2023-06-07,Ethan Wilson,Python Cookbook,Books,2,39.99,20,63.98,Europe,Spain,Credit Card,Completed
+ORD-00315,2023-06-17,David Williams,Yoga Pants,Clothing,3,44.99,5,128.22,North America,United States,PayPal,Completed
+ORD-00316,2023-07-27,Ethan Young,Fiction Novel,Books,1,14.99,0,14.99,Europe,United Kingdom,Google Pay,Completed
+ORD-00317,2023-02-01,Olivia Jones,Webcam HD,Electronics,1,89.99,10,80.99,North America,United States,PayPal,Cancelled
+ORD-00318,2023-10-28,Daniel Williams,History of Rome,Books,2,19.99,15,33.98,North America,Mexico,Credit Card,Completed
+ORD-00319,2023-01-22,Ethan Johnson,Graphic Tee,Clothing,3,24.99,0,74.97,Asia Pacific,Australia,PayPal,Refunded
+ORD-00320,2023-07-01,Michael Garcia,Data Science Guide,Books,1,44.99,0,44.99,Middle East,UAE,Debit Card,Completed
+ORD-00321,2023-09-13,Isabella Young,Design Thinking,Books,1,24.99,5,23.74,Europe,France,Apple Pay,Completed
+ORD-00322,2023-01-10,Noah Thomas,USB-C Hub,Electronics,1,49.99,0,49.99,Europe,Italy,Apple Pay,Refunded
+ORD-00323,2023-04-03,James Anderson,History of Rome,Books,4,19.99,5,75.96,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00324,2023-03-23,Sarah Davis,USB-C Hub,Electronics,1,49.99,20,39.99,Asia Pacific,Japan,PayPal,Completed
+ORD-00325,2023-03-30,Emma Davis,Yoga Mat,Sports,3,34.99,15,89.22,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00326,2023-10-16,Michael Martin,Lip Balm Set,Beauty,4,14.99,0,59.96,Asia Pacific,Japan,Google Pay,Completed
+ORD-00327,2023-09-27,Mia Smith,Graphic Tee,Clothing,1,24.99,0,24.99,Europe,United Kingdom,Debit Card,Refunded
+ORD-00328,2023-01-12,David Lee,Denim Jacket,Clothing,1,89.99,0,89.99,Asia Pacific,Australia,PayPal,Cancelled
+ORD-00329,2023-10-28,Sarah Anderson,Monitor Stand,Electronics,3,39.99,20,95.98,Asia Pacific,India,Debit Card,Completed
+ORD-00330,2023-03-31,Charlotte Walker,Denim Jacket,Clothing,2,89.99,0,179.98,Middle East,Saudi Arabia,Debit Card,Completed
+ORD-00331,2023-04-01,James Lee,Shampoo Bar,Beauty,3,12.99,0,38.97,Asia Pacific,Japan,Apple Pay,Cancelled
+ORD-00332,2023-02-23,Mia Jones,Yoga Mat,Sports,1,34.99,0,34.99,Europe,Italy,Debit Card,Pending
+ORD-00333,2023-12-10,Liam Harris,Mechanical Keyboard,Electronics,1,129.99,0,129.99,North America,Mexico,Credit Card,Completed
+ORD-00334,2023-01-01,Maria Jackson,Denim Jacket,Clothing,2,89.99,0,179.98,North America,Mexico,Apple Pay,Pending
+ORD-00335,2023-10-07,Noah Brown,Design Thinking,Books,4,24.99,0,99.96,Middle East,Saudi Arabia,Apple Pay,Cancelled
+ORD-00336,2023-01-11,Liam Wilson,Resistance Bands,Sports,1,19.99,0,19.99,North America,Canada,Credit Card,Completed
+ORD-00337,2023-02-17,Liam Walker,Air Fryer,Home & Kitchen,4,99.99,0,399.96,North America,Mexico,Google Pay,Completed
+ORD-00338,2023-01-28,Sarah Anderson,Face Serum,Beauty,1,42.99,5,40.84,Middle East,UAE,PayPal,Completed
+ORD-00339,2023-06-02,Olivia Brown,Fiction Novel,Books,2,14.99,10,26.98,Asia Pacific,Singapore,Credit Card,Completed
+ORD-00340,2023-08-07,Alex Taylor,Jump Rope,Sports,3,12.99,0,38.97,Asia Pacific,Australia,Google Pay,Completed
+ORD-00341,2023-08-31,Sarah Taylor,Running Shoes,Clothing,1,64.99,0,64.99,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00342,2023-07-15,Ava Garcia,History of Rome,Books,1,19.99,5,18.99,Europe,France,Apple Pay,Completed
+ORD-00343,2023-03-19,Sarah Williams,Knife Set,Home & Kitchen,1,54.99,0,54.99,Asia Pacific,Australia,Debit Card,Cancelled
+ORD-00344,2023-09-25,Isabella Young,Foam Roller,Sports,5,24.99,5,118.7,North America,Canada,Apple Pay,Refunded
+ORD-00345,2023-10-20,Mason Lee,Graphic Tee,Clothing,1,24.99,0,24.99,North America,Mexico,Google Pay,Completed
+ORD-00346,2023-03-06,Maria White,Webcam HD,Electronics,1,89.99,20,71.99,Europe,Germany,Credit Card,Pending
+ORD-00347,2023-02-04,Alex Jackson,Design Thinking,Books,5,24.99,5,118.7,Asia Pacific,Singapore,Google Pay,Completed
+ORD-00348,2023-11-16,Lucas Thompson,Dumbbells 20lb,Sports,3,49.99,5,142.47,North America,Mexico,Apple Pay,Completed
+ORD-00349,2023-10-16,Sarah Taylor,Design Thinking,Books,1,24.99,5,23.74,North America,United States,Google Pay,Completed
+ORD-00350,2023-03-30,Daniel Jackson,History of Rome,Books,1,19.99,0,19.99,Middle East,UAE,PayPal,Refunded
+ORD-00351,2023-01-26,Mia Wilson,Foam Roller,Sports,1,24.99,15,21.24,Asia Pacific,Japan,Debit Card,Completed
+ORD-00352,2023-03-10,Sophia Harris,Blender Pro,Home & Kitchen,1,74.99,10,67.49,North America,United States,Debit Card,Completed
+ORD-00353,2023-07-28,Mia Thompson,Eye Cream,Beauty,2,36.99,0,73.98,Middle East,UAE,Debit Card,Cancelled
+ORD-00354,2023-09-26,Lucas Smith,Monitor Stand,Electronics,3,39.99,0,119.97,Middle East,UAE,PayPal,Completed
+ORD-00355,2023-05-21,Ava Harris,Running Shoes,Clothing,1,64.99,0,64.99,Asia Pacific,Japan,Google Pay,Completed
+ORD-00356,2023-04-01,Mia Lee,Face Serum,Beauty,2,42.99,0,85.98,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00357,2023-01-15,Noah Johnson,Air Fryer,Home & Kitchen,3,99.99,0,299.97,North America,Canada,PayPal,Cancelled
+ORD-00358,2023-11-30,Isabella Thompson,Resistance Bands,Sports,3,19.99,5,56.97,Europe,France,Credit Card,Cancelled
+ORD-00359,2023-01-05,Olivia Wilson,Face Serum,Beauty,1,42.99,0,42.99,Europe,Italy,Google Pay,Cancelled
+ORD-00360,2023-05-10,Michael Harris,Blender Pro,Home & Kitchen,1,74.99,0,74.99,Asia Pacific,India,Debit Card,Pending
+ORD-00361,2023-06-02,Sarah Martin,Jump Rope,Sports,1,12.99,0,12.99,Asia Pacific,Singapore,Credit Card,Completed
+ORD-00362,2023-03-18,Mason Davis,Blender Pro,Home & Kitchen,3,74.99,0,224.97,Asia Pacific,Japan,Credit Card,Cancelled
+ORD-00363,2023-09-12,Sophia Wilson,Foam Roller,Sports,2,24.99,5,47.48,North America,Mexico,Apple Pay,Completed
+ORD-00364,2023-04-24,Charlotte Martin,Python Cookbook,Books,2,39.99,20,63.98,Europe,France,Debit Card,Refunded
+ORD-00365,2023-02-19,Mia Jones,Air Fryer,Home & Kitchen,3,99.99,15,254.97,Europe,France,Debit Card,Pending
+ORD-00366,2023-07-01,Olivia Taylor,Resistance Bands,Sports,4,19.99,15,67.97,North America,United States,Apple Pay,Cancelled
+ORD-00367,2023-01-28,Lucas Lee,Blender Pro,Home & Kitchen,1,74.99,0,74.99,North America,Canada,Google Pay,Completed
+ORD-00368,2023-07-31,Maria Jones,Design Thinking,Books,2,24.99,15,42.48,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00369,2023-06-11,Emma Williams,Knife Set,Home & Kitchen,5,54.99,15,233.71,Middle East,UAE,Apple Pay,Completed
+ORD-00370,2023-04-18,Emma Lee,Moisturizer SPF50,Beauty,1,28.99,0,28.99,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00371,2023-09-02,Noah Smith,Mechanical Keyboard,Electronics,2,129.99,5,246.98,Middle East,Saudi Arabia,Credit Card,Refunded
+ORD-00372,2023-12-13,James Davis,Yoga Pants,Clothing,5,44.99,15,191.21,Europe,United Kingdom,PayPal,Pending
+ORD-00373,2023-02-03,Maria Taylor,Blender Pro,Home & Kitchen,1,74.99,0,74.99,Asia Pacific,Japan,Debit Card,Completed
+ORD-00374,2023-09-08,Ava Miller,Shampoo Bar,Beauty,2,12.99,0,25.98,Europe,France,PayPal,Cancelled
+ORD-00375,2023-01-12,Lucas Thompson,Python Cookbook,Books,1,39.99,10,35.99,Europe,Germany,PayPal,Completed
+ORD-00376,2023-01-25,Sarah Smith,Coffee Maker,Home & Kitchen,1,59.99,5,56.99,North America,Mexico,Credit Card,Pending
+ORD-00377,2023-12-26,David Miller,Webcam HD,Electronics,1,89.99,0,89.99,Asia Pacific,India,Credit Card,Completed
+ORD-00378,2023-02-23,Mason Walker,Python Cookbook,Books,2,39.99,0,79.98,Europe,Spain,Credit Card,Completed
+ORD-00379,2023-07-03,Isabella Taylor,Wireless Headphones,Electronics,1,79.99,5,75.99,Asia Pacific,Japan,PayPal,Completed
+ORD-00380,2023-05-01,James Smith,Foam Roller,Sports,4,24.99,5,94.96,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00381,2023-02-21,Daniel Davis,Foam Roller,Sports,1,24.99,0,24.99,North America,Mexico,Apple Pay,Completed
+ORD-00382,2023-07-04,Liam White,Knife Set,Home & Kitchen,1,54.99,10,49.49,North America,Canada,Credit Card,Completed
+ORD-00383,2023-07-03,Ethan Walker,Wireless Headphones,Electronics,3,79.99,5,227.97,Europe,France,Debit Card,Pending
+ORD-00384,2023-08-22,Daniel Jackson,USB-C Hub,Electronics,3,49.99,0,149.97,Middle East,Saudi Arabia,Apple Pay,Cancelled
+ORD-00385,2023-02-23,Isabella Lee,Design Thinking,Books,1,24.99,5,23.74,North America,United States,Apple Pay,Cancelled
+ORD-00386,2023-12-17,David Martin,Foam Roller,Sports,1,24.99,0,24.99,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00387,2023-12-27,Mason Lee,Data Science Guide,Books,1,44.99,0,44.99,Asia Pacific,Australia,Google Pay,Completed
+ORD-00388,2023-12-05,Olivia Martin,Lip Balm Set,Beauty,2,14.99,5,28.48,North America,Canada,Debit Card,Pending
+ORD-00389,2023-11-26,Emma Thompson,Eye Cream,Beauty,1,36.99,10,33.29,North America,United States,Apple Pay,Cancelled
+ORD-00390,2023-05-23,Maria Thompson,Design Thinking,Books,1,24.99,0,24.99,Europe,France,PayPal,Refunded
+ORD-00391,2023-10-21,Ethan Williams,Eye Cream,Beauty,1,36.99,0,36.99,Middle East,Saudi Arabia,Apple Pay,Completed
+ORD-00392,2023-07-26,Isabella Johnson,Coffee Maker,Home & Kitchen,5,59.99,10,269.95,North America,United States,Google Pay,Refunded
+ORD-00393,2023-12-02,Ethan Anderson,Wireless Headphones,Electronics,3,79.99,20,191.98,Asia Pacific,Japan,Debit Card,Cancelled
+ORD-00394,2023-08-20,Sarah Brown,Mechanical Keyboard,Electronics,3,129.99,0,389.97,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00395,2023-12-26,Sarah Johnson,Blender Pro,Home & Kitchen,3,74.99,20,179.98,Asia Pacific,Singapore,PayPal,Completed
+ORD-00396,2023-07-21,Michael Harris,Graphic Tee,Clothing,1,24.99,5,23.74,Europe,United Kingdom,PayPal,Pending
+ORD-00397,2023-08-23,Lucas Thompson,Coffee Maker,Home & Kitchen,3,59.99,0,179.97,North America,Canada,PayPal,Completed
+ORD-00398,2023-09-18,Emma Lee,Monitor Stand,Electronics,2,39.99,5,75.98,Middle East,Saudi Arabia,PayPal,Pending
+ORD-00399,2023-08-03,Amelia Davis,Running Shoes,Clothing,1,64.99,5,61.74,Asia Pacific,India,Debit Card,Completed
+ORD-00400,2023-12-26,Charlotte Anderson,Blender Pro,Home & Kitchen,1,74.99,0,74.99,Middle East,Saudi Arabia,Google Pay,Pending
+ORD-00401,2023-12-30,Emma Thompson,Denim Jacket,Clothing,1,89.99,10,80.99,Asia Pacific,Japan,Google Pay,Pending
+ORD-00402,2023-12-12,Charlotte Taylor,Lip Balm Set,Beauty,2,14.99,10,26.98,Middle East,Saudi Arabia,Apple Pay,Cancelled
+ORD-00403,2023-01-29,Michael Wilson,Monitor Stand,Electronics,1,39.99,0,39.99,North America,Mexico,PayPal,Completed
+ORD-00404,2023-10-05,Maria Thomas,Lip Balm Set,Beauty,1,14.99,0,14.99,Asia Pacific,Japan,Apple Pay,Completed
+ORD-00405,2023-09-19,Sophia Johnson,Jump Rope,Sports,3,12.99,10,35.07,Middle East,UAE,Apple Pay,Completed
+ORD-00406,2023-11-14,Ethan Davis,History of Rome,Books,5,19.99,0,99.95,Asia Pacific,Japan,Debit Card,Cancelled
+ORD-00407,2023-08-18,Emma Williams,Jump Rope,Sports,2,12.99,0,25.98,Europe,France,PayPal,Completed
+ORD-00408,2023-03-08,Emma Lee,Shampoo Bar,Beauty,1,12.99,0,12.99,Asia Pacific,Singapore,Debit Card,Completed
+ORD-00409,2023-11-02,Maria Walker,Knife Set,Home & Kitchen,2,54.99,0,109.98,Europe,France,Debit Card,Completed
+ORD-00410,2023-04-05,Mason Williams,Jump Rope,Sports,1,12.99,10,11.69,Asia Pacific,Japan,Google Pay,Completed
+ORD-00411,2023-12-06,Liam Anderson,Fiction Novel,Books,2,14.99,0,29.98,Europe,Germany,Debit Card,Completed
+ORD-00412,2023-12-09,Ava Harris,Winter Coat,Clothing,2,149.99,20,239.98,North America,United States,PayPal,Pending
+ORD-00413,2023-02-28,Noah Wilson,Jump Rope,Sports,1,12.99,0,12.99,Asia Pacific,India,Google Pay,Pending
+ORD-00414,2023-09-07,Maria Taylor,Coffee Maker,Home & Kitchen,4,59.99,10,215.96,Asia Pacific,India,PayPal,Completed
+ORD-00415,2023-02-03,Michael Miller,Yoga Mat,Sports,4,34.99,0,139.96,North America,Mexico,Apple Pay,Cancelled
+ORD-00416,2023-12-18,David Smith,Mechanical Keyboard,Electronics,2,129.99,10,233.98,Middle East,UAE,Apple Pay,Pending
+ORD-00417,2023-10-22,Olivia Wilson,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Asia Pacific,Australia,Apple Pay,Completed
+ORD-00418,2023-01-04,Amelia Williams,Data Science Guide,Books,1,44.99,0,44.99,North America,Mexico,Google Pay,Completed
+ORD-00419,2023-11-07,Alex Taylor,Face Serum,Beauty,1,42.99,5,40.84,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00420,2023-10-07,Sophia Jones,Python Cookbook,Books,1,39.99,5,37.99,Europe,Spain,Debit Card,Pending
+ORD-00421,2023-01-22,James Lee,Lip Balm Set,Beauty,5,14.99,0,74.95,Europe,United Kingdom,Google Pay,Completed
+ORD-00422,2023-07-31,Mason Jones,Jump Rope,Sports,4,12.99,0,51.96,Asia Pacific,Japan,PayPal,Completed
+ORD-00423,2023-01-28,Charlotte Harris,Winter Coat,Clothing,3,149.99,0,449.97,Europe,Italy,Google Pay,Completed
+ORD-00424,2023-07-02,David Davis,Coffee Maker,Home & Kitchen,1,59.99,0,59.99,Middle East,Saudi Arabia,Credit Card,Completed
+ORD-00425,2023-11-12,Sophia Lee,Yoga Mat,Sports,4,34.99,0,139.96,Middle East,Saudi Arabia,PayPal,Refunded
+ORD-00426,2023-06-10,Olivia Davis,Dumbbells 20lb,Sports,3,49.99,20,119.98,Europe,United Kingdom,Apple Pay,Completed
+ORD-00427,2023-08-17,Ava Taylor,Air Fryer,Home & Kitchen,2,99.99,0,199.98,Middle East,Saudi Arabia,Apple Pay,Refunded
+ORD-00428,2023-10-03,Michael Wilson,Mechanical Keyboard,Electronics,2,129.99,0,259.98,Asia Pacific,Japan,Credit Card,Pending
+ORD-00429,2023-01-19,Charlotte Wilson,Wireless Headphones,Electronics,3,79.99,5,227.97,Middle East,UAE,Google Pay,Refunded
+ORD-00430,2023-08-26,Mason Thompson,Design Thinking,Books,1,24.99,0,24.99,Asia Pacific,Japan,Credit Card,Completed
+ORD-00431,2023-03-13,Ethan Garcia,Cutting Board,Home & Kitchen,1,29.99,0,29.99,Europe,Italy,PayPal,Refunded
+ORD-00432,2023-04-23,Mia Davis,Resistance Bands,Sports,2,19.99,0,39.98,Asia Pacific,Australia,Credit Card,Completed
+ORD-00433,2023-08-29,Ethan Johnson,Air Fryer,Home & Kitchen,1,99.99,0,99.99,Asia Pacific,India,Credit Card,Pending
+ORD-00434,2023-10-24,Charlotte Lee,Coffee Maker,Home & Kitchen,2,59.99,5,113.98,Asia Pacific,Singapore,PayPal,Completed
+ORD-00435,2023-05-09,Noah Davis,Eye Cream,Beauty,1,36.99,5,35.14,North America,Mexico,Google Pay,Completed
+ORD-00436,2023-03-13,Ethan Garcia,Blender Pro,Home & Kitchen,1,74.99,0,74.99,North America,Mexico,PayPal,Completed
+ORD-00437,2023-12-05,Olivia White,Dumbbells 20lb,Sports,1,49.99,0,49.99,Asia Pacific,Australia,Debit Card,Pending
+ORD-00438,2023-01-12,Olivia Johnson,Webcam HD,Electronics,2,89.99,0,179.98,Europe,Spain,PayPal,Refunded
+ORD-00439,2023-03-27,Daniel Garcia,Resistance Bands,Sports,1,19.99,5,18.99,Europe,United Kingdom,Google Pay,Completed
+ORD-00440,2023-04-21,Ethan Walker,Jump Rope,Sports,2,12.99,15,22.08,Asia Pacific,Australia,Apple Pay,Cancelled
+ORD-00441,2023-04-04,Amelia Thompson,Design Thinking,Books,1,24.99,0,24.99,Europe,Italy,Debit Card,Completed
+ORD-00442,2023-07-13,Noah Jones,Lip Balm Set,Beauty,4,14.99,5,56.96,North America,United States,Credit Card,Completed
+ORD-00443,2023-11-07,Sarah Garcia,Winter Coat,Clothing,3,149.99,5,427.47,Middle East,UAE,Apple Pay,Refunded
+ORD-00444,2023-09-04,David Walker,Yoga Mat,Sports,4,34.99,5,132.96,North America,United States,Google Pay,Cancelled
+ORD-00445,2023-09-29,Isabella Davis,Webcam HD,Electronics,2,89.99,0,179.98,North America,Mexico,Apple Pay,Cancelled
+ORD-00446,2023-03-10,Daniel Martin,History of Rome,Books,2,19.99,10,35.98,North America,Canada,PayPal,Cancelled
+ORD-00447,2023-01-03,James Lee,USB-C Hub,Electronics,2,49.99,5,94.98,Asia Pacific,Japan,Google Pay,Completed
+ORD-00448,2023-07-05,Sarah Jones,Yoga Mat,Sports,1,34.99,0,34.99,Asia Pacific,India,Apple Pay,Pending
+ORD-00449,2023-12-15,Noah Miller,Dumbbells 20lb,Sports,1,49.99,5,47.49,Asia Pacific,Singapore,Apple Pay,Refunded
+ORD-00450,2023-06-07,Lucas Thomas,Foam Roller,Sports,1,24.99,5,23.74,Middle East,Saudi Arabia,Apple Pay,Pending
+ORD-00451,2023-04-20,Mason Jackson,Running Shoes,Clothing,2,64.99,0,129.98,Europe,United Kingdom,Debit Card,Cancelled
+ORD-00452,2023-11-22,James Williams,Jump Rope,Sports,2,12.99,10,23.38,Europe,Spain,PayPal,Completed
+ORD-00453,2023-11-08,Maria Jackson,Foam Roller,Sports,1,24.99,0,24.99,Asia Pacific,Australia,Apple Pay,Refunded
+ORD-00454,2023-11-24,Mia Harris,Shampoo Bar,Beauty,1,12.99,20,10.39,North America,United States,Credit Card,Completed
+ORD-00455,2023-03-28,Maria Thomas,Shampoo Bar,Beauty,1,12.99,0,12.99,Europe,Italy,PayPal,Pending
+ORD-00456,2023-12-09,Noah Jackson,Mechanical Keyboard,Electronics,1,129.99,0,129.99,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00457,2023-05-26,Charlotte Lee,Yoga Mat,Sports,2,34.99,0,69.98,North America,Mexico,Debit Card,Completed
+ORD-00458,2023-05-14,Emma White,Air Fryer,Home & Kitchen,2,99.99,0,199.98,Middle East,UAE,Google Pay,Completed
+ORD-00459,2023-05-12,Charlotte Lee,Yoga Mat,Sports,2,34.99,0,69.98,North America,Mexico,Debit Card,Pending
+ORD-00460,2023-12-15,Ethan Lee,Data Science Guide,Books,2,44.99,10,80.98,Asia Pacific,India,Credit Card,Completed
+ORD-00461,2023-06-11,Isabella Thomas,USB-C Hub,Electronics,1,49.99,5,47.49,Europe,Germany,Google Pay,Refunded
+ORD-00462,2023-10-11,Emma Martin,USB-C Hub,Electronics,1,49.99,0,49.99,Asia Pacific,Australia,Debit Card,Completed
+ORD-00463,2023-04-13,Olivia Davis,Winter Coat,Clothing,1,149.99,15,127.49,Europe,Spain,Debit Card,Completed
+ORD-00464,2023-02-24,Sarah Williams,Denim Jacket,Clothing,3,89.99,10,242.97,Asia Pacific,Japan,Apple Pay,Refunded
+ORD-00465,2023-09-10,Lucas Wilson,Monitor Stand,Electronics,5,39.99,10,179.95,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00466,2023-09-27,Isabella Martin,Dumbbells 20lb,Sports,1,49.99,10,44.99,Europe,United Kingdom,Google Pay,Completed
+ORD-00467,2023-03-03,Mason Harris,Dumbbells 20lb,Sports,1,49.99,5,47.49,Europe,Spain,Debit Card,Pending
+ORD-00468,2023-07-05,Amelia Wilson,Wireless Headphones,Electronics,2,79.99,0,159.98,North America,Canada,PayPal,Refunded
+ORD-00469,2023-04-05,Mia White,Air Fryer,Home & Kitchen,1,99.99,20,79.99,Asia Pacific,Singapore,PayPal,Completed
+ORD-00470,2023-10-20,David Lee,Lip Balm Set,Beauty,1,14.99,0,14.99,Middle East,UAE,PayPal,Cancelled
+ORD-00471,2023-03-16,David Martin,USB-C Hub,Electronics,3,49.99,5,142.47,Middle East,UAE,Credit Card,Completed
+ORD-00472,2023-06-03,Daniel Young,Data Science Guide,Books,1,44.99,15,38.24,Asia Pacific,India,Google Pay,Completed
+ORD-00473,2023-11-19,Sarah Harris,Python Cookbook,Books,2,39.99,0,79.98,Asia Pacific,India,Debit Card,Completed
+ORD-00474,2023-01-11,Isabella Brown,Blender Pro,Home & Kitchen,2,74.99,15,127.48,Asia Pacific,Singapore,Debit Card,Cancelled
+ORD-00475,2023-07-01,Liam Thompson,Shampoo Bar,Beauty,1,12.99,5,12.34,Europe,France,Apple Pay,Cancelled
+ORD-00476,2023-11-20,David Garcia,Eye Cream,Beauty,4,36.99,0,147.96,Asia Pacific,India,Debit Card,Completed
+ORD-00477,2023-03-24,Liam Davis,Shampoo Bar,Beauty,2,12.99,10,23.38,North America,United States,Debit Card,Completed
+ORD-00478,2023-08-16,Ava Lee,Lip Balm Set,Beauty,2,14.99,5,28.48,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00479,2023-12-25,Alex Miller,Design Thinking,Books,1,24.99,0,24.99,Europe,France,PayPal,Completed
+ORD-00480,2023-07-23,Mason Williams,Wireless Headphones,Electronics,1,79.99,15,67.99,North America,United States,Credit Card,Completed
+ORD-00481,2023-04-28,Olivia Taylor,Resistance Bands,Sports,1,19.99,15,16.99,Middle East,Saudi Arabia,Apple Pay,Pending
+ORD-00482,2023-07-02,Liam Martin,Denim Jacket,Clothing,2,89.99,0,179.98,North America,Mexico,Apple Pay,Cancelled
+ORD-00483,2023-11-02,Ethan Lee,Dumbbells 20lb,Sports,2,49.99,0,99.98,Europe,Italy,Apple Pay,Refunded
+ORD-00484,2023-08-15,Sophia Thomas,Shampoo Bar,Beauty,1,12.99,0,12.99,Europe,United Kingdom,Apple Pay,Completed
+ORD-00485,2023-05-27,Mia Young,Yoga Pants,Clothing,1,44.99,5,42.74,Europe,France,Credit Card,Pending
+ORD-00486,2023-01-04,Charlotte Thomas,Data Science Guide,Books,1,44.99,10,40.49,Asia Pacific,Japan,PayPal,Completed
+ORD-00487,2023-04-23,Daniel Williams,Foam Roller,Sports,1,24.99,0,24.99,Middle East,Saudi Arabia,Apple Pay,Pending
+ORD-00488,2023-11-29,Charlotte Wilson,Winter Coat,Clothing,3,149.99,15,382.47,Asia Pacific,Singapore,Apple Pay,Completed
+ORD-00489,2023-05-20,Amelia Martin,Mechanical Keyboard,Electronics,1,129.99,0,129.99,Middle East,Saudi Arabia,PayPal,Completed
+ORD-00490,2023-05-25,Daniel Jones,Mechanical Keyboard,Electronics,1,129.99,5,123.49,Europe,United Kingdom,Apple Pay,Pending
+ORD-00491,2023-08-04,Sophia Martin,Mechanical Keyboard,Electronics,1,129.99,0,129.99,Europe,France,Debit Card,Completed
+ORD-00492,2023-05-17,Noah Williams,Face Serum,Beauty,1,42.99,10,38.69,Europe,United Kingdom,Google Pay,Completed
+ORD-00493,2023-03-04,Olivia Jackson,Denim Jacket,Clothing,4,89.99,0,359.96,Middle East,UAE,Apple Pay,Completed
+ORD-00494,2023-12-07,Michael Martin,Face Serum,Beauty,1,42.99,10,38.69,North America,Mexico,Apple Pay,Pending
+ORD-00495,2023-09-04,Sophia Miller,Blender Pro,Home & Kitchen,1,74.99,10,67.49,North America,Canada,Debit Card,Completed
+ORD-00496,2023-01-08,Emma Wilson,Moisturizer SPF50,Beauty,5,28.99,0,144.95,Middle East,Saudi Arabia,Google Pay,Completed
+ORD-00497,2023-07-10,Alex Davis,Design Thinking,Books,1,24.99,0,24.99,Middle East,UAE,PayPal,Completed
+ORD-00498,2023-07-02,David Young,Monitor Stand,Electronics,1,39.99,20,31.99,North America,United States,Credit Card,Completed
+ORD-00499,2023-04-09,James Jackson,Design Thinking,Books,1,24.99,5,23.74,Asia Pacific,India,Debit Card,Pending
+ORD-00500,2023-10-05,Mia Miller,Yoga Pants,Clothing,4,44.99,0,179.96,Middle East,Saudi Arabia,Google Pay,Completed

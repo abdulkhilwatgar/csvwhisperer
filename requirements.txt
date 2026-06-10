@@ -1,0 +1,7 @@
+# CSVWhisperer dependencies
+streamlit>=1.32.0
+duckdb>=0.10.0
+pandas>=2.0.0
+plotly>=5.18.0
+ollama>=0.1.8
+huggingface-hub>=0.20.0
