@@ -20,6 +20,8 @@ short_description: Ask questions about any CSV in plain English.
 ![DuckDB](https://img.shields.io/badge/DuckDB-0.10+-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+🚀 **[Try it live on HuggingFace Spaces](https://huggingface.co/spaces/ashkankhilwatgar/CSVWhisperer)**
+
 ---
 
 ## What it does
