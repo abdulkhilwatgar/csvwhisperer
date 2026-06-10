@@ -8,12 +8,12 @@ sdk_version: 1.32.0
 app_file: app.py
 pinned: false
 license: mit
-short_description: Ask questions about any CSV in plain English. Fully local.
+short_description: Ask questions about any CSV in plain English.
 ---
 
 # 🔍 CSVWhisperer
 
-> Ask questions about any CSV file in plain English. No SQL. No Python. Fully local — your data never leaves your machine.
+> Ask questions about any CSV file in plain English. No SQL. No Python.
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32+-red)
@@ -27,12 +27,20 @@ short_description: Ask questions about any CSV in plain English. Fully local.
 CSVWhisperer lets you upload any CSV and query it conversationally. Under the hood:
 
 1. Your CSV is loaded into an in-memory **DuckDB** database
-2. Your question is sent to a local **Qwen2.5-Coder** model via **Ollama**
+2. Your question (plus a short schema description) is sent to a **Qwen2.5-Coder** model
 3. The model generates a SQL query against your schema
-4. The query runs locally and results appear as a table + auto-generated chart
+4. The query runs against your data and results appear as a table + auto-generated chart
 5. If the SQL fails, the model retries automatically (up to 3 attempts)
 
-No data ever leaves your machine.
+CSVWhisperer runs in two modes:
+
+- **Local** — run `streamlit run app.py` on your own machine. The model runs
+  through a local **Ollama** instance, so nothing about your data ever leaves
+  your computer.
+- **Hugging Face Space** — anyone can open the hosted Space, upload their own
+  CSV, and ask questions. The model runs through the **HF Inference API**
+  instead of Ollama (everything else is identical). See
+  [Privacy on Hugging Face Spaces](#privacy-on-hugging-face-spaces) below.
 
 ---
 
@@ -84,19 +92,30 @@ Open `http://localhost:8501` in your browser.
 
 ## Deploy to Hugging Face Spaces
 
-CSVWhisperer supports a cloud deployment mode. When deployed to HF Spaces, it
-automatically switches from local Ollama to the HF Inference API and loads a
-sample e-commerce dataset for the demo.
+CSVWhisperer supports a cloud deployment mode. When `HF_SPACE=true` is set,
+the app automatically switches its SQL-generation backend from local Ollama
+to the **HF Inference API** (`Qwen/Qwen2.5-Coder-7B-Instruct`). Everything
+else — uploading a CSV, querying it, charts — works exactly the same as
+local mode, and is usable by anyone who opens the Space.
 
 1. Fork this repo to your HF account as a new Space (SDK: Streamlit)
-2. Add your HF token as a Space secret named `HF_TOKEN`
+2. Add your HF token as a Space secret named `HF_TOKEN` (create one at
+   [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) —
+   a token with "Make calls to Inference Providers" permission is enough)
 3. Add a Space variable: `HF_SPACE=true`
 4. Push — the Space builds automatically
 
-> **Data privacy:** The HF deployment uses only the bundled `sample_data.csv`.
-> Your real data is never uploaded anywhere. For sensitive data, always run locally.
+### Privacy on Hugging Face Spaces
 
-> Note: The free HF CPU tier is slower than local. For best performance, run locally.
+- Your CSV is processed in-memory by DuckDB inside the Space, the same as
+  local mode — it is not stored or persisted.
+- However, to generate SQL, a short **schema description** (column names,
+  inferred types, and up to 3 sample values per column) is sent to the HF
+  Inference API as part of the prompt. If your data is sensitive, run
+  CSVWhisperer locally instead, where this never leaves your machine.
+
+> Note: Inference Providers can be slower than a local GPU/CPU running
+> Ollama, and are subject to your HF account's rate limits.
 
 ---
 
@@ -107,8 +126,8 @@ sample e-commerce dataset for the demo.
 - **Retry loop** — if SQL fails, the model fixes it automatically
 - **Follow-up awareness** — ask follow-up questions that reference previous results
 - **Schema explorer** — sidebar shows column types, samples, and null counts
-- **100% local** — Ollama runs on your machine, nothing is sent to any API
-- **HF Spaces compatible** — deploy publicly with one environment variable
+- **Local mode** — Ollama runs on your machine, nothing is sent to any API
+- **Hosted mode** — deploy to HF Spaces so anyone can upload their own CSV and query it, no local setup required
 
 ---
 

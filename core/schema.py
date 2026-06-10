@@ -69,6 +69,8 @@ def infer_column_type(series: pd.Series) -> str:
     else:
         # Try to detect if it looks like a date
         sample = series.dropna().head(10)
+        if sample.empty:
+            return "text"
         try:
             pd.to_datetime(sample, format="mixed")
             return "date (stored as text)"

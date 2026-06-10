@@ -1,11 +1,9 @@
 """
 CSVWhisperer — Natural language querying for any CSV file.
-Fully local: your data never leaves your machine.
 
 Run: streamlit run app.py
 """
 
-import os
 import streamlit as st
 import pandas as pd
 
@@ -13,10 +11,6 @@ from core.schema import load_csv, build_schema_description, get_schema_summary
 from core.executor import QueryExecutor
 from core.sql import generate_sql_with_retry
 from core.visualizer import auto_visualize, format_single_value_result, should_visualize
-
-# Detect HF Spaces deployment
-IS_HF_SPACE = os.getenv("HF_SPACE", "false").lower() == "true"
-SAMPLE_DATA_PATH = os.path.join(os.path.dirname(__file__), "sample_data.csv")
 
 # ── Page config ────────────────────────────────────────────────────────────────
 
