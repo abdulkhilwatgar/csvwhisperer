@@ -293,11 +293,6 @@ def _load_into_state(file_or_path, spinner_label="Loading dataset..."):
             return False, None
 
 
-if IS_HF_SPACE and st.session_state.df is None:
-    if os.path.exists(SAMPLE_DATA_PATH):
-        ok, df = _load_into_state(SAMPLE_DATA_PATH, "Loading demo dataset...")
-        # Don't show a status message — just proceed silently
-
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 
 with st.sidebar:
@@ -310,20 +305,11 @@ with st.sidebar:
     )
     st.divider()
 
-    if IS_HF_SPACE:
-        st.markdown(
-            "<div class='status-line'>Demo mode — sample dataset loaded</div>",
-            unsafe_allow_html=True,
-        )
-        st.caption(
-            "To query your own data, clone this Space and run it locally — see the README for setup instructions."
-        )
-    else:
-        uploaded_file = st.file_uploader(
-            "Upload a CSV file", type=["csv"], label_visibility="collapsed"
-        )
-        if uploaded_file is not None and uploaded_file.name != st.session_state.filename:
-            _load_into_state(uploaded_file)
+    uploaded_file = st.file_uploader(
+        "Upload a CSV file", type=["csv"], label_visibility="collapsed"
+    )
+    if uploaded_file is not None and uploaded_file.name != st.session_state.filename:
+        _load_into_state(uploaded_file)
 
     if st.session_state.df is not None:
         st.markdown('<div class="section-label">Dataset</div>', unsafe_allow_html=True)
